@@ -1,93 +1,117 @@
 <!DOCTYPE html>
 <html>
+  <html lang="lv">
+    <meta charset="utf-8">
     <head>
       <title>mels majaslapa</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <style>
-      #RadamaisSaturs{
-        display: none;
-      }
-    </style>
-    <script>
-function raditSaturu(){
-  document.getElementById("RadamaisSaturs").style.display = "block"
-}
-function pasleptSaturu(){
-
-}
-    </script>
-    </head>
-
-    <body>
-     
-      <body style="background-color:rgb(255, 161, 194);">
-      <h1>Kaķīši! :3 <style> h1{text-align: center;}</style></h1>  
-      <h4> Mazliet informācija par kaķīšiem </h4>
-     <p> Viņi saka mjau</p>
-     <p><a href="https://www.rag.lv/"> RAĢ MĀJASLAPA</a></p>
-     <div class="container text-center">
-    <div class="row">
-    <div class="col">
-      <img src="https://i.pinimg.com/236x/a5/3d/54/a53d54eaa4e0633cbf6c14bdaaa697a9.jpg" alt="meow"style="width: 300px;px;height: 300px;px;" .left {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-      }>
-  
-      <div>
-<p> lana del rey fr</p>
-<p>lana del rey fr</p>
-<p>lana del rey fr</p>
-<p> lana del rey fr</p>
-<p>lana del rey fr</p>
-<p>lana del rey fr</p>
-    <button id="PogaRadit" onclick="raditSaturu()">Rādīt vairāk</button>
-  <div id="RadamaisSaturs">
-<p> lana del rey fr</p>
-<p>lana del rey fr</p>
-<p>lana del rey fr</p>
-<p> lana del rey fr</p>
-<p>lana del rey fr</p>
-<p>lana del rey fr</p>
-  <button onclick="pasleptSaturu()">Rādīt mazāk</button>
-</div>
-
-<div class="row justify-content-end">
-    <div class="col">
-    <span>Mājas kaķis jeb kaķis, arī domesticētais kaķis ir mazs, plēsīgs kaķu dzimtas zīdītājs, kas pieradināts pirms vairāk nekā 9500 gadiem. Kaķis ir ļoti populārs mājdzīvnieks, jo palīdz cilvēkam cīnīties ar dažādiem kaitēkļiem, piemēram, pelēm, čūskām un pat skorpioniem</span>
-      <div>
-    <div>
-  <div>
-    <p style="color:rgb(8, 8, 8);">es milu programmesanu !!</p>
-     <style>
-      table, th, td {
-        border:1px solid black;
-      }
+      
       <style>
-table, th, td {
-  border:1px solid black;
-}
-</style>
-<body>
-<table style="width:100%">
-  <tr>
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-  </tr>
-  <tr>
-    <td>:3</td>
-    <td>:3</td>
-    <td>:3</td>
-  </tr>
-  <tr>
-    <td>:P</td>
-    <td>:P</td>
-    <td>:P</td>
-  </tr>
-</table>
+        body {
+          background-image: url(https://png.pngtree.com/background/20221206/original/pngtree-simple-aesthetic-background-with-hand-drawn-leaves-picture-image_1984683.jpg);
+          background-size: cover;
+        }
+        p,ol,h3,h4,h1,h2,a button {
+          background-color: rgb(197, 243, 197);
+        }
+        #RādamaisSaturs {
+          display: none;
+        }
+      </style>
+      <script>
+        function raditsaturu() {
+          document.getElementById("RādamaisSaturs").style.display = "block";
+          document.getElementById("PogaRaadiit").style.display = "none";
+        }
+        function pasleptsaturu() {
+          document.getElementById("RādamaisSaturs").style.display = "none";
+          document.getElementById("PogaRaadiit").style.display = "block";
+        }
+        function mainaBildes() {
+    var bilde = document.getElementById("bilde1");
+    if (bilde.src.includes("https://t4.ftcdn.net/jpg/05/62/99/31/360_F_562993122_e7pGkeY8yMfXJcRmclsoIjtOoVDDgIlh.jpg")) {
+      bilde.src = "https://img.freepik.com/free-photo/close-up-portrait-beautiful-cat_23-2149214419.jpg";
+    } else {
+      bilde.src = "https://t4.ftcdn.net/jpg/05/62/99/31/360_F_562993122_e7pGkeY8yMfXJcRmclsoIjtOoVDDgIlh.jpg";
+    }
+  }
+  function mainaas() {
+    var mainasTeksts = document.getElementById("mainasTeksts");
+    if (mainasTeksts.innerHTML.trim() === "Spāņu inkvizīcijas laikā Romas pāvests Inocents VIII visus kaķus pasludināja par ļaunuma iemiesojumu, kā rezultātā tūkstošiem kaķu tika sadedzināti. Plašā kaķu iznīcināšana noveda pie bēdīgām sekām – krasi pieauga žurku populācija, kas izraisīja mēra uzliesmojumu.") {
+      mainasTeksts.innerHTML = "Pirmais kaķis, kurš aizlidoja kosmosā, bija Francijas kaķis Felicette jeb Astrokaķis, kuru Francija kosmosā aizsūtīja 1963. gadā. Kaķis no ceļojuma atgriezās dzīvs.";
+    } else {
+      mainasTeksts.innerHTML = "Kaķi ir pasaulē populārākie mājdzīvnieki. Uz katru pasaules suni ir gandrīz trīs kaķi.";
+    }
+  }
+      </script>
+    </head>
+    <body>
+      <div class="container-fluid">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <h1 class="rounded-5 p-2">''Par kakiem!''</h1>
+              <h2 class="rounded-5 p-2">vini saka mjau</h2>
+              <p class="rounded-5 p-5">
+                Mājas kaķis jeb kaķis, arī domesticētais kaķis ir mazs, plēsīgs kaķu dzimtas zīdītājs, kas pieradināts pirms vairāk nekā 9500 gadiem. Kaķis ir ļoti populārs mājdzīvnieks, jo palīdz cilvēkam cīnīties ar dažādiem kaitēkļiem, piemēram, pelēm, čūskām un pat skorpioniem.
+              </p>
+              <button class="rounded-5 p-2" id="PogaRaadiit" onclick="raditsaturu()" style="display: block;">Rādīt vairāk</button>
+              <div id="RādamaisSaturs" style="display: none;">
+                <p class="rounded-5 p-2">
+                  Lai gan daudzi domā, ka senie ēģiptieši bija pirmie, kas pieradinājuši kaķus, tā nebūt nav. Senākais mājas kaķis atrasts Kiprā kādā 9500 gadu vecā kapā. Atrastais kaps ir 4000 gadu senāks par senajā Ēģiptē atrastajiem kaķu zīmējumiem.
+                </p>
+                <button class="rounded-5 p-2" onclick="pasleptsaturu()">Rādīt mazāk</button>
+              </div>
+              <p class="rounded-5 p-4" id="mainasTeksts">
+                Ziedu veido ziedkāts, ziedgultnis, apziednis, androceja un ginecejs. 
+                Ziedkāta galā atrodas ziedgultnis, uz kura balstās visas pārējās daļas no zieda. 
+                Divkāršu apziedni veido vainaglapas un kauslapas. 
+                Ja kauslapas ziedam nav, tad to sauc par vienkāršu apziedni.
+                 Ja visas vainaglapas ir vienādas, tad to sauc par kārtnu ziedu, bet ja ir atšķirīgas, tad — par nekārtnu ziedu
+              </p>
+              <button class="rounded-5 p-3" onclick="mainaas()">Mainīt tekstu</button>
+            </div>
+            <div class="col">
+              <img 
+              id="bilde1"
+              src="https://www.whisker.lv/wp-content/uploads/2019/06/animalia-3208412_640-640x400.jpg">
+              <h3 class="rounded-5 p-2">Alerģijas pret kaķiem skar 10 līdz 20% pasaules iedzīvotāju.</h3>
+              <table class="table table-dark table-hover">
+                <style>
+                  table,
+                  th,
+                  td {
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                  }
+                </style>
+                <tbody><tr>
+                  <th>viens</th>
+                  <th>divi</th>
+                  <th>trīs</th>
+                </tr>
+                <tr>
+                  <td>četri</td>
+                  <td>pieci</td>
+                  <td>seši</td>
+                </tr>
+              </tbody></table>
+              <a href="https://www.rag.lv/" class="rounded-5 p-2"> raģ.lv</a>
+              <h4 class="rounded-5 p-2">Saraksts</h4>
+              <ol class="rounded-5 p-5">
+                <li>jā</li>
+                <li>nē</li>
+                <li>varbūt</li>
+                <li>Tabula</li>
+                <li>RAĢ mājaslapa</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+     </div>
+        </div>
     </body>
-    
 </html>
